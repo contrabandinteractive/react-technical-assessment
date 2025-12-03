@@ -107,7 +107,7 @@ const generateCategories = () => {
       name: 'Electronics',
       slug: 'electronics',
       description: 'Electronic devices and gadgets',
-      image: 'https://via.placeholder.com/300x200?text=Electronics',
+      image: 'https://placehold.co/300x200/4f46e5/white?text=Electronics',
       parentId: null,
       createdAt: new Date('2024-01-01').toISOString()
     },
@@ -116,7 +116,7 @@ const generateCategories = () => {
       name: 'Clothing',
       slug: 'clothing',
       description: 'Fashion and apparel',
-      image: 'https://via.placeholder.com/300x200?text=Clothing',
+      image: 'https://placehold.co/300x200/10b981/white?text=Clothing',
       parentId: null,
       createdAt: new Date('2024-01-01').toISOString()
     },
@@ -125,7 +125,7 @@ const generateCategories = () => {
       name: 'Home & Garden',
       slug: 'home-garden',
       description: 'Home improvement and garden supplies',
-      image: 'https://via.placeholder.com/300x200?text=Home+Garden',
+      image: 'https://placehold.co/300x200/f59e0b/white?text=Home+Garden',
       parentId: null,
       createdAt: new Date('2024-01-01').toISOString()
     },
@@ -134,7 +134,7 @@ const generateCategories = () => {
       name: 'Books',
       slug: 'books',
       description: 'Books and literature',
-      image: 'https://via.placeholder.com/300x200?text=Books',
+      image: 'https://placehold.co/300x200/ef4444/white?text=Books',
       parentId: null,
       createdAt: new Date('2024-01-01').toISOString()
     },
@@ -143,7 +143,7 @@ const generateCategories = () => {
       name: 'Sports & Outdoors',
       slug: 'sports-outdoors',
       description: 'Sports equipment and outdoor gear',
-      image: 'https://via.placeholder.com/300x200?text=Sports',
+      image: 'https://placehold.co/300x200/3b82f6/white?text=Sports',
       parentId: null,
       createdAt: new Date('2024-01-01').toISOString()
     },
@@ -152,7 +152,7 @@ const generateCategories = () => {
       name: 'Smartphones',
       slug: 'smartphones',
       description: 'Mobile phones and accessories',
-      image: 'https://via.placeholder.com/300x200?text=Smartphones',
+      image: 'https://placehold.co/300x200/8b5cf6/white?text=Smartphones',
       parentId: 'cat-1',
       createdAt: new Date('2024-01-01').toISOString()
     },
@@ -161,7 +161,7 @@ const generateCategories = () => {
       name: 'Laptops',
       slug: 'laptops',
       description: 'Laptop computers',
-      image: 'https://via.placeholder.com/300x200?text=Laptops',
+      image: 'https://placehold.co/300x200/06b6d4/white?text=Laptops',
       parentId: 'cat-1',
       createdAt: new Date('2024-01-01').toISOString()
     }
@@ -181,8 +181,8 @@ const generateProducts = () => {
       categoryId: 'cat-6',
       sellerId: 'user-2',
       images: [
-        'https://via.placeholder.com/800x600?text=iPhone+15+Pro+1',
-        'https://via.placeholder.com/800x600?text=iPhone+15+Pro+2'
+        'https://placehold.co/800x600/1e293b/white?text=iPhone+15+Pro',
+        'https://placehold.co/800x600/334155/white?text=iPhone+15+Pro+Details'
       ],
       stock: 50,
       sku: 'IPH15PRO-001',
@@ -210,8 +210,8 @@ const generateProducts = () => {
       categoryId: 'cat-7',
       sellerId: 'user-2',
       images: [
-        'https://via.placeholder.com/800x600?text=MacBook+Pro+1',
-        'https://via.placeholder.com/800x600?text=MacBook+Pro+2'
+        'https://placehold.co/800x600/475569/white?text=MacBook+Pro+16',
+        'https://placehold.co/800x600/64748b/white?text=MacBook+Details'
       ],
       stock: 25,
       sku: 'MBP16-001',
@@ -239,7 +239,7 @@ const generateProducts = () => {
       categoryId: 'cat-2',
       sellerId: 'user-3',
       images: [
-        'https://via.placeholder.com/800x600?text=Nike+Air+Max+90'
+        'https://placehold.co/800x600/dc2626/white?text=Nike+Air+Max+90'
       ],
       stock: 100,
       sku: 'NIKE-AM90-001',
@@ -266,8 +266,8 @@ const generateProducts = () => {
       categoryId: 'cat-6',
       sellerId: 'user-3',
       images: [
-        'https://via.placeholder.com/800x600?text=Galaxy+S24+Ultra+1',
-        'https://via.placeholder.com/800x600?text=Galaxy+S24+Ultra+2'
+        'https://placehold.co/800x600/7c3aed/white?text=Galaxy+S24+Ultra',
+        'https://placehold.co/800x600/9333ea/white?text=S24+Ultra+Details'
       ],
       stock: 40,
       sku: 'SGS24U-001',
@@ -295,7 +295,7 @@ const generateProducts = () => {
       categoryId: 'cat-4',
       sellerId: 'user-2',
       images: [
-        'https://via.placeholder.com/800x600?text=Great+Gatsby'
+        'https://placehold.co/800x600/059669/white?text=The+Great+Gatsby'
       ],
       stock: 200,
       sku: 'BOOK-GG-001',
@@ -323,7 +323,7 @@ const generateProducts = () => {
       categoryId: 'cat-5',
       sellerId: 'user-3',
       images: [
-        'https://via.placeholder.com/800x600?text=Yoga+Mat'
+        'https://placehold.co/800x600/a855f7/white?text=Yoga+Mat+Premium'
       ],
       stock: 75,
       sku: 'YOGA-MAT-001',
@@ -351,8 +351,8 @@ const generateProducts = () => {
       categoryId: 'cat-3',
       sellerId: 'user-2',
       images: [
-        'https://via.placeholder.com/800x600?text=Coffee+Maker+1',
-        'https://via.placeholder.com/800x600?text=Coffee+Maker+2'
+        'https://placehold.co/800x600/d97706/white?text=Coffee+Maker+Deluxe',
+        'https://placehold.co/800x600/ea580c/white?text=Coffee+Maker+Details'
       ],
       stock: 30,
       sku: 'COFFEE-001',
@@ -379,8 +379,8 @@ const generateProducts = () => {
       categoryId: 'cat-1',
       sellerId: 'user-3',
       images: [
-        'https://via.placeholder.com/800x600?text=Headphones+1',
-        'https://via.placeholder.com/800x600?text=Headphones+2'
+        'https://placehold.co/800x600/0891b2/white?text=Wireless+Headphones',
+        'https://placehold.co/800x600/0e7490/white?text=Headphones+Details'
       ],
       stock: 60,
       sku: 'HEADPHONES-001',

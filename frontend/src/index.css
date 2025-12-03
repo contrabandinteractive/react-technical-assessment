@@ -1,0 +1,174 @@
+:root {
+  /* Brand Colors - Warm Earthy Palette */
+  --primary-color: #E35336;        /* Terracotta - primary actions */
+  --primary-hover: #c73d27;        /* Darker terracotta */
+  --secondary-color: #F4A460;      /* Sandy brown - accents */
+  --tertiary-color: #A0522D;       /* Sienna - dark accents */
+
+  /* Backgrounds */
+  --background: #F5F5DC;           /* Beige - main background */
+  --surface: #FFFFFF;              /* White - cards/surfaces */
+  --surface-warm: #FFF8F0;         /* Warm white */
+
+  /* Text */
+  --text-primary: #2C1810;         /* Very dark brown */
+  --text-secondary: #A0522D;       /* Sienna */
+  --text-light: #8B6F47;           /* Light brown */
+
+  /* States */
+  --error: #D32F2F;
+  --success: #2E7D32;
+
+  /* UI Elements */
+  --border: #E8D4C0;
+  --shadow: 0 2px 8px rgba(227, 83, 54, 0.08);
+  --shadow-md: 0 4px 12px rgba(227, 83, 54, 0.12);
+  --shadow-lg: 0 8px 24px rgba(227, 83, 54, 0.16);
+  --shadow-xl: 0 12px 40px rgba(227, 83, 54, 0.2);
+
+  /* Typography */
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, var(--background) 0%, #FFF8F0 100%);
+  color: var(--text-primary);
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Typography Improvements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Utility Classes */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.error-message {
+  background: linear-gradient(135deg, #FFF5F5 0%, #FFE8E8 100%);
+  color: var(--error);
+  padding: 1.25rem 1.5rem;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  border: 2px solid rgba(211, 47, 47, 0.2);
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(211, 47, 47, 0.08);
+}
+
+.success-message {
+  background: linear-gradient(135deg, #F1F8F4 0%, #E8F5E9 100%);
+  color: var(--success);
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+  border: 2px solid rgba(46, 125, 50, 0.2);
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.08);
+}
+
+/* Button Styles */
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #c73d27 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  font-family: var(--font-body);
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 12px rgba(227, 83, 54, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(227, 83, 54, 0.35);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-primary:disabled {
+  background: linear-gradient(135deg, var(--text-light) 0%, #9B8266 100%);
+  cursor: not-allowed;
+  opacity: 0.6;
+  transform: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
