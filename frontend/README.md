@@ -1,6 +1,4 @@
-# Marketplace Frontend Application
-
-A React-based e-commerce frontend application built with Vite that integrates with the Marketplace Backend API.
+Submission for the Technical Assessment
 
 ## Features
 
